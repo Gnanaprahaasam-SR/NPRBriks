@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+   <title>NPR  INTERLOCK BRICKS</title>
+   <meta name="description" content="NPR  INTERLOCK BRICKS">
+  <meta name="keywords" content="NPR,interlock,bricks">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+  <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="assets/css/style.css" rel="stylesheet">
+   <style>
+  
+   .wppBtn {
+  display: none;
+  position: fixed;
+  bottom: 40px;
+  left: 40px;
+  width: 60px;
+  height: 60px;
+  z-index: 999;
+  max-width: 60px;
+  max-height: 60px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiPgo8cGF0aCBzdHlsZT0iZmlsbDojNENBRjUwOyIgZD0iTTI1Ni4wNjQsMGgtMC4xMjhsMCwwQzExNC43ODQsMCwwLDExNC44MTYsMCwyNTZjMCw1NiwxOC4wNDgsMTA3LjkwNCw0OC43MzYsMTUwLjA0OGwtMzEuOTA0LDk1LjEwNCAgbDk4LjQtMzEuNDU2QzE1NS43MTIsNDk2LjUxMiwyMDQsNTEyLDI1Ni4wNjQsNTEyQzM5Ny4yMTYsNTEyLDUxMiwzOTcuMTUyLDUxMiwyNTZTMzk3LjIxNiwwLDI1Ni4wNjQsMHoiLz4KPHBhdGggc3R5bGU9ImZpbGw6I0ZBRkFGQTsiIGQ9Ik00MDUuMDI0LDM2MS41MDRjLTYuMTc2LDE3LjQ0LTMwLjY4OCwzMS45MDQtNTAuMjQsMzYuMTI4Yy0xMy4zNzYsMi44NDgtMzAuODQ4LDUuMTItODkuNjY0LTE5LjI2NCAgQzE4OS44ODgsMzQ3LjIsMTQxLjQ0LDI3MC43NTIsMTM3LjY2NCwyNjUuNzkyYy0zLjYxNi00Ljk2LTMwLjQtNDAuNDgtMzAuNC03Ny4yMTZzMTguNjU2LTU0LjYyNCwyNi4xNzYtNjIuMzA0ICBjNi4xNzYtNi4zMDQsMTYuMzg0LTkuMTg0LDI2LjE3Ni05LjE4NGMzLjE2OCwwLDYuMDE2LDAuMTYsOC41NzYsMC4yODhjNy41MiwwLjMyLDExLjI5NiwwLjc2OCwxNi4yNTYsMTIuNjQgIGM2LjE3NiwxNC44OCwyMS4yMTYsNTEuNjE2LDIzLjAwOCw1NS4zOTJjMS44MjQsMy43NzYsMy42NDgsOC44OTYsMS4wODgsMTMuODU2Yy0yLjQsNS4xMi00LjUxMiw3LjM5Mi04LjI4OCwxMS43NDQgIGMtMy43NzYsNC4zNTItNy4zNiw3LjY4LTExLjEzNiwxMi4zNTJjLTMuNDU2LDQuMDY0LTcuMzYsOC40MTYtMy4wMDgsMTUuOTM2YzQuMzUyLDcuMzYsMTkuMzkyLDMxLjkwNCw0MS41MzYsNTEuNjE2ICBjMjguNTc2LDI1LjQ0LDUxLjc0NCwzMy41NjgsNjAuMDMyLDM3LjAyNGM2LjE3NiwyLjU2LDEzLjUzNiwxLjk1MiwxOC4wNDgtMi44NDhjNS43MjgtNi4xNzYsMTIuOC0xNi40MTYsMjAtMjYuNDk2ICBjNS4xMi03LjIzMiwxMS41ODQtOC4xMjgsMTguMzY4LTUuNTY4YzYuOTEyLDIuNCw0My40ODgsMjAuNDgsNTEuMDA4LDI0LjIyNGM3LjUyLDMuNzc2LDEyLjQ4LDUuNTY4LDE0LjMwNCw4LjczNiAgQzQxMS4yLDMyOS4xNTIsNDExLjIsMzQ0LjAzMiw0MDUuMDI0LDM2MS41MDR6Ii8+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=);
+}
+
+/* pulse */
+.pulse {position: fixed;}
+.pulse:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 40px;
+    border: 3px solid #4caf50;
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    animation: pulse 2s ease 0s infinite;
+}
+.zoom:hover {
+  -ms-transform: scale(0.5); /* IE 9 */
+  -webkit-transform: scale(0.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+}
+   </style>
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="navbar navbar-expand-lg bg-white navbar-light sticky-top py-0 pe-5">
+
+      <!-- <h1 class="logo"><a href="index.html">Multi</a></h1> -->
+      <!-- Uncomment below if you prefer to use an image logo -->
+    <a href="index.html" class="logo"><img src="assets/img/npr_logo.png" alt="" class="img-fluid"></a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="index.html">HOME</a></li>
+          <li><a class="nav-link scrollto" href="bricks.html">BRICKS</a></li>
+          <li><a class="nav-link scrollto" href="gallery.html">GALLERY</a></li>
+          <li><a class="nav-link scrollto " href="contact.html">CONTACT US</a></li>
+		  <li><a class="getstarted scrollto" href="tel:7010108314" target="_blank">+91 7010108314</a></li>
+       
+            </ul>
+        
+        
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+   <a href="https://wa.me/7010108314?text=Hi" target="_blank"  class="wppBtn pulse"></a>
+  <section id="hero">
+    <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+      <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+      <div class="carousel-inner" role="listbox">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active" style="background-image: url(assets/img/bs1.jpg)">
+          <div class="carousel-container">
+            <div class="container">
+              <h2 class="animate__animated animate__fadeInDown">Welcome to <span>NPR INTERLOCK BRICKS</span></h2>
+              <p class="animate__animated animate__fadeInUp">Leading manufacturers and suppliers of Interlock Bricks</p>
+              <a href="bricks.html" class="btn-get-started animate__animated animate__fadeInUp scrollto">FIND OUT MORE</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item" style="background-image: url(assets/img/bs2.jpg)">
+          <div class="carousel-container">
+            <div class="container">
+              <h2 class="animate__animated animate__fadeInDown">Eco friendly   Construction</h2>
+              <p class="animate__animated animate__fadeInUp">Build your dream home with Interlocking Bricks</p>
+              <a href="bricks.html" class="btn-get-started animate__animated animate__fadeInUp scrollto">FIND OUT MORE</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item" style="background-image: url(assets/img/bs3.jpg)">
+          <div class="carousel-container">
+            <div class="container">
+              <h2 class="animate__animated animate__fadeInDown">Traditional   BRICKS</h2>
+              <p class="animate__animated animate__fadeInUp">Simplifies the construction as well as reduce the time from conception to completion of the project.</p>
+              <a href="bricks.html" class="btn-get-started animate__animated animate__fadeInUp scrollto">FIND OUT MORE</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+      </a>
+
+      <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+      </a>
+
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+  <div class="container-fluid">
+ 
+  <div class="row">
+    <div class="col-sm-4"style="with:100%;background-image: url(assets/img/iff.jpg);height: 16rem;">
+	<div class="imcol">
+	 </br>
+              <h2 style="color:#ffffff;"><strong>Super Finished Look high-density high strength </strong></h2>
+              <p class="buut" ><a href="gallery.html"><span style="color:#ffffff;">&nbsp; Find out more &raquo;</span></a></p>
+	</div>
+	</div>
+    <div class="col-sm-4"style="background-image: url(assets/img/iff1.jpg);height: 16rem;">
+	<div class="imcol">
+	 </br>
+              <h2 style="color:#ffffff;"><strong>Reduce the time Simplifies the construction</strong></h2>
+              <p class="buut" ><a href="gallery.html"><span style="color:#ffffff;">&nbsp; Find out more &raquo;</span></a></p>
+	</div>
+	
+	</div>
+    <div class="col-sm-4" style="background-image: url(assets/img/iff2.jpg);height: 16rem;">
+	
+		<div class="imcol">
+	 </br>
+              <h2 style="color:#ffffff;"><strong>Punctual Delivery Reasonable pricing </strong></h2>
+              <p class="buut" ><a href="gallery.html"><span style="color:#ffffff;">&nbsp; Find out more &raquo;</span></a></p>
+	</div>
+	</div>
+  </div>
+</div>
+
+    <!-- ======= Counts Section ======= -->
+
+
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us section-bg">
+      <div class="container-fluid" data-aos="fade-up">
+
+        <div class="row">
+
+         
+
+          <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch">
+		    <div class="section-title" style="top: 23px;
+    position: relative;
+    text-align: -webkit-center;">
+          
+          <p>Make your Construction in style</p>
+        </div>
+
+            <div class="content">
+             
+              <p>
+               We are counted amongst the market leading manufacturers and suppliers of a diverse range of Construction Materials. Concealed wiring and plumbing work can be done on the interlocking block walls just like the normal walls.
+              </p>
+			      <p>
+              NPR Interlocking Bricks is the latest advancement in Wall Construction. These bricks are ‘locked’ against each other without the use of cement mortar, to form a structurally stable wall that reduces the cost and time of construction to almost half.
+              </p>
+			  
+            </div>
+
+           
+
+          </div>
+		   <div class="col-lg-5 align-items-stretch video-box mt-3"  data-aos="zoom-in" data-aos-delay="100">
+            <img src="assets/img/ab1.jpg" style="width:100%">
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Why Us Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container" data-aos="fade-up">
+
+       <div class="section-title mt-3" style="top: 23px;
+    position: relative;
+    text-align: -webkit-center;">
+         
+          <p>OUR PRODUCTS</p>
+		 
+        </div>
+<div class="textt">
+ <p style="text-align: justify;">The biggest advantage of concrete interlocking blocks is that it doesn’t require plastering. Wall putty can be directly applied to produce a superfine finish wall construction. 
+ These blocks can be used for the construction of high-rise building and can bring in significant reduction in material handling cost and the efforts involved.</p>
+</div>
+
+
+
+
+<section class="wrapper">
+<div class="container">
+
+  <div class="row">
+    <div class="col-sm-3">
+	<p><b>INTERLOCK BLOCKS</b></p>
+	<div class="zoom">
+	<a href="bricks.html"><img src="assets/img/in1.jpg" style="width:100%"></a>
+	</div>
+	</div>
+   
+	<div class="col-sm-1">
+	</div>
+    <div class="col-sm-3">
+	<p><b>SOLID BLOCKS</b></p>
+	<div class="zoom">
+	<a href="bricks.html"><img src="assets/img/solid1.jpg" style="width:100%"></a>
+	</div>
+	</div>
+	<div class="col-sm-1">
+	</div>
+    <div class="col-sm-3">
+	<p><b>HOLLOW BLOCKS</b></p>
+	<div class="zoom">
+	<a href="bricks.html"><img src="assets/img/hollow.jpg" style="width:100%"></a>
+	</div>
+	</div>
+	
+  </div>
+</div>
+  <div class="container">
+    <div class="row">
+    
+    </div>
+ 
+  
+</div>
+</section>
+
+
+      </div>
+    </section><!-- End Services Section -->
+
+
+    <!-- ======= Cta Section ======= -->
+    <section id="cta" class="cta">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="text-center">
+          <h3 style="color:#000000;"><span style="color:#db272a;">NPR</span> INTERLOCK BRICKS</h3>
+      
+        </div>
+
+      </div>
+    </section><!-- End Cta Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+   
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 footer-links">
+            <h4>QUICK LINKS</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="index.html">HOME</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="bricks.html">BRICKS</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="gallery.html">GALLERY</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="contact.html">CONTACT US</a></li>
+             
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-links">
+            <h4>PRODUCTS</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="bricks.html">6″ HOLLOW BLOCK</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="bricks.html">4″ HOLLOW BLOCK</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="bricks.html">6″ SOLID BLOCK</a></li>
+			  <li><i class="bx bx-chevron-right"></i> <a href="bricks.html">4″ SOLID BLOCK</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="bricks.html">60mm PAVER</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="bricks.html">80mm PAVER</a></li>
+            </ul>
+          </div>
+ <div class="col-lg-4 col-md-6 footer-links">
+            <h4>CONTACT US</h4>
+          <p style="text-align:justify">
+               <i class="fa fa-map-marker" style="font-size:17px;color:red"></i> <a href="https://goo.gl/maps/iZfpu7M9ZroNaX3Y6" target="_blank">33/27-A1,Vangal Road,<br>Veetaikaranpudur Vadapuram,<br>Arasu colony,
+				Karur - 639004 </a>
+                <ul>
+             <i class="fa fa-phone" style="font-size:48px;color:red;font-size: 17px;color: red;"></i>  <a href="tel:7010108314" target="_blank">+91 7010108314</a></li><br>
+              <i class="fa fa-phone" style="font-size:48px;color:red;font-size: 17px;color: red;"></i> <a href="tel:9629868731" target="_blank">+91 9629868731</a></li><br>
+             <i class="fa fa-phone" style="font-size:48px;color:red;font-size: 17px;color: red;"></i> <a href="tel:7598667938" target="_blank">+91 7598667938</a></li><br>
+            <i class="fa fa-phone" style="font-size:48px;color:red;font-size: 17px;color: red;"></i> <a href="tel:7598667938" target="_blank"> +91 9843342972</a></li><br>
+             
+            </ul>
+                
+          </div>
+        
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>NPR INTERLOCK BRICKS</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+    
+        <a href="https://t-nxt.com/" target="_blank"><p style="font-size: 17px;"><span style="color:#fff">Designed by  <img src="assets/img/logo_resized.png"  style="height: 12px;color:#ffffff;"> India Pvt Ltd</span></p></a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+	  <script>
+	  $(document).scroll(function() {
+  var i = $(this).scrollTop();
+  if (i > 100) {
+    $('.wppBtn').fadeIn();
+  } else {
+    $('.wppBtn').fadeOut();
+  }
+});
+	  </script>
+</body>
+
+</html>
